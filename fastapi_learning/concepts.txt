@@ -1,0 +1,43 @@
+>> Basic
+- path parameters
+- API Docs Swagger
+- Query parameters
+- Request body
+
+>> Intermediate
+
+- Debugging FastAPI
+- Pydantic Schemas
+- SqlAlchemy database connection
+- Models and table
+
+>> Database tasks
+- Storing blog to database
+- Get blogs from database
+- Delete
+- Update
+
+>> Responses
+- Handling exceptions
+- Return Response
+- Define response model 
+
+>> User and password
+- Create user
+- Hash user password
+- Show single user
+- Define docs tags
+
+>> Relationship
+- Define user to blog Relationship
+- Define blog to user Relationship
+
+>> Refactor for bigger applications
+- API Router
+- API Router with parameters
+
+>> Authentication using JWT
+- Create login Route
+- Login and verify password
+- Return JWT access token
+- Routes behind authentication

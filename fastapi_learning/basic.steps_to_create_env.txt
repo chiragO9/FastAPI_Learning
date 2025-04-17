@@ -1,0 +1,39 @@
+>> Commands
+- python -m venv [name]
+
+- Ex : python -m venv fastapi_env 
+
+Now after creating the virtual enivornment, you have to activate it. How you can do that,
+
+Sorce\bin\activate
+
+To activate for this project, 
+
+Sorce -> [your virtual enivornment name] here we have fastapi_env
+bin   -> [Scripts inside the fastapi_env] Scripts
+
+and then activate
+
+So final command will be fastapi_env\Scripts\activate
+
+- After comleting this, inside the virtual enivornment install fastapi.
+
+>> Command
+pip install fastapi
+
+- Afer installing the fastpi install uvicorn.
+
+>> Command
+pip install uvicorn
+
+- To run on server, 
+
+>> Command
+uvicorn main:app --reload
+
+4 basic steps to create your firs api.
+
+1. first import fastapi
+2. Create instance for fastpi
+3. Use decorator 
+4. Define function

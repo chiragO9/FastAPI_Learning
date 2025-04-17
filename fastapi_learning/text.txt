@@ -1,0 +1,41 @@
+>> What are the features that it has.
+- Automatic docs
+
+- When you create an api, how you're going to check that We can use postman
+  but that's not a good way. So here in fast api it provides, 
+  1. Swagger UI 
+  2. ReDoc UI.
+
+- Modern framework
+
+Uses python 3.6 with python 
+Pydantic
+
+- Based on open standards.
+JSON Schema
+Open api
+
+- Security and Authentication
+HTTP basic
+OAuth2 [also with JWT tokens]
+API keys in
+    - headers
+    - query parameters
+    - cookies
+
+- Dependency injection
+testing - uses pytest to test your applications.
+
+- Also has Starlette featues. [Starlette is actually another python framework]
+  Here are the featues of Starlette that python offers.
+  It is build over Starlette.
+Websokect support
+GraphQL support
+In progress background tasks.
+Startup and Shutdown events.
+Session and Cookies Support.
+
+- Support.
+SQL databases
+NoSQL databases
+GraphQL
