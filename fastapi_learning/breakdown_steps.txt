@@ -1,0 +1,73 @@
+>> Having same name functions doesn't matter in the output in fastapi.
+What matter is the @decorator.
+
+
+In depth : 
+
+@app.get('/')
+
+Here ('/') is known as path.
+
+@app.get('/') 
+
+Here .get is known as operation. It can be .get .post .delete .patch.
+
+Also known as operation on the path.
+
+@app.get('/') 
+def abx():
+  return {"hi there"}
+
+ - A function above which we are defining the path and the opeartion using 
+ the app decorator is known as path operation decorator.
+
+
+ - Here after @app.get('/), the function is known as path opeartion decorator.
+
+ - Here the function is,
+
+ def abx():
+  return {"hi there}
+
+  
+  @app.get('/')
+
+  - Here a @app decorator is known as path operation decorator.
+
+  >> In fastapi whenever you want dynamic routing use {}.
+  Inside the {} define name. You can define any name,
+
+  Ex : {id} or {blog_id}
+
+  But here before using the variable we actually have to accept the variable inside the function, and for that you have to use 
+  same name.
+
+Ex : 
+
+@app.get('/blog/{id}')
+def showblog(id):
+  return {"data" : id }
+
+NOTE : here {id} is actually called parameter. And it should have same name as inside the function.
+
+Ex : @app/get('blog'/{id})
+        def show(id):
+          return {"data"}
+
+- Here inside the ('blog/{id}') and function def show(id) both name should be same. In this case id in path operation and in function.
+
+
+>> Providing the type of the parameter.
+
+- defining the type for the parameter. inside the function,
+
+@app.get('/one/{id}')
+def change_type(id:int):
+   return {'data' :id}
+
+Here the error you encouter will,
+
+"msg": "Input should be a valid integer, unable to parse string as an integer",
+      "input": "sf"
+
+Don't have to think about the type conversion.
